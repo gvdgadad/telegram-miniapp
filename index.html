@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Кейсы Standoff 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Открой кейс 🎁</h1>
+  <div id="cases">
+    <button onclick="openCase(25)">Кейс за 25G</button>
+    <button onclick="openCase(50)">Кейс за 50G</button>
+    <button onclick="openCase(75)">Кейс за 75G</button>
+    <button onclick="openCase(100)">Кейс за 100G</button>
+    <button onclick="openCase(500)">Кейс за 500G</button>
+  </div>
+
+  <div id="result" class="hidden">
+    <h2>Ты выбил:</h2>
+    <p id="dropName">AKR12 "4 Years"</p>
+    <p id="dropValue">💰 Цена: 55 G</p>
+    <div class="buttons">
+      <button onclick="addToInventory()">🎒 В инвентарь</button>
+      <button onclick="claimGold()">💰 Забрать голдой</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
